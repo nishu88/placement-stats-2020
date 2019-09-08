@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      {{>nav}}
+	  </nav>
+    <!-- END nav -->
+
+
+
+		<section class="ftco-section bg-light">
+			<div id="foo" class="container">
+				<div class="row">
+					<div class="col-lg-12 pr-lg-3">
+						<div class="row justify-content-center pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<span class="subheading">Stats 2020</span>
+		            <h2 class="mb-4">Job Offers</h2>
+		          </div>
+		        </div>
+
+
+            <div  class="row">
+
+            {{#datas}}
+
+            <div class="col-md-6 ftco-animate">
+              <div class="job-post-item py-4 d-block d-lg-flex align-items-center">
+                <div class="one-third mb-4 mb-md-0">
+                  <div class="job-post-item-header d-flex align-items-center">
+                    <h2 class="mr-3 text-black"><a href="#">{{company_name}}</a></h2>
+                    <div class="badge-wrap">
+                     <span class="bg-{{xx}} text-white badge py-2 px-3">{{ctc}}L</span>
+                    </div>
+                  </div>
+                  <div class="job-post-item-body d-block d-md-flex">
+                    <div class="mr-3"><span class="icon-layers"></span> <a href="#">No. of Offers - {{total_offers}}</a></div>
+                    <div><span class="icon-my_location"></span> <span>Cutoff - {{cgpa_cutoff  }} </span></div>
+                    <div class="mr-3"><span class="icon-layers"></span> <a href="#"> Base - {{base}}L</a></div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- end -->
+
+
+            {{/datas}}
+
+
+
+
+		        </div>
+		      </div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+    <div id="contact">
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      {{>footer}}
+    </footer>
+  </div>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
