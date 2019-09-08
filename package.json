@@ -5,10 +5,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "",
-    "build": "",
-    "postinstall": "turbo check-env"
+    "start": "node app.js"
   },
   "engines": {
     "node": ">=7.6.0",
