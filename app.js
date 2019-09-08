@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 //mongoose.connect('localhost:27017/mydb', { useNewUrlParser: true });
 //mongodb+srv://<user>:<pass>@mydb-bivhl.mongodb.net/test?retryWrites=true&w=majority
-mongoose.connect("mongodb+srv://USERNAME:PASS@mydb-bivhl.mongodb.net/mydb?retryWrites=true&w=majority", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://"+ process.env.USERNAME+":"+process.env.PASS+"@mydb-bivhl.mongodb.net/mydb?retryWrites=true&w=majority", { useNewUrlParser: true });
 /*
 	Apps can also be initialized with config options as shown in the commented out example below. Options
 	include setting views directory, static assets directory, and database settings. To see default config
