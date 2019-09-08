@@ -9,6 +9,10 @@
     "build": "",
     "postinstall": "turbo check-env"
   },
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": ">=4.1.2"
+  }
   "dependencies": {
     "turbo360": "latest",
     "vertex360": "latest",
