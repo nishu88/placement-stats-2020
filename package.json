@@ -3,13 +3,11 @@
   "version": "0.0.0",
   "server": false,
   "private": true,
-  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
-  },
-  "engines": {
-    "node": ">=7.6.0",
-    "npm": ">=4.1.2"
+    "start": "node ./bin/www",
+    "test": "",
+    "build": "",
+    "postinstall": "turbo check-env"
   },
   "dependencies": {
     "turbo360": "latest",
@@ -45,7 +43,8 @@
     "type-is": "^1.6.16",
     "utils-merge": "1.0.1",
     "vary": "^1.1.2",
-    "mongoose": "latest"
+    "mongoose": "latest",
+    "webpack":"latest"
   },
   "devDependencies": {
     "express": "latest",
